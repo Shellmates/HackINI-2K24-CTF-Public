@@ -1,0 +1,7 @@
+version: "3"
+
+services:
+    vdf:
+        build: .
+        ports:
+        - "8000:8000"

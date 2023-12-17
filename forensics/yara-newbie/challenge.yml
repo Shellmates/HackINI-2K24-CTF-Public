@@ -1,0 +1,32 @@
+Notes:
+- Your anti virus might alert you about a malware in the uploads folder, just ignore
+  it.
+author: letmewin
+author_link: https://www.linkedin.com/in/abdelkhalek-beraoud-707567245/
+category: forensics
+description: "> A telecommunication company was attacked, the attackers managed to\
+  \ get remote control over  \n> some servers. After inverstigation, the company managed\
+  \ to map the attack to APT41. Find the file  \n> that is causing problem and find\
+  \ what is it called.  \n> the flag format: shellmates{filename-Famous-Filename}\n\
+  > password for the zip file: shellmates  \n   \n\n **Author**: letmewin"
+difficulty: medium
+extra:
+  decay: 50
+  initial: 500
+  minimum: 50
+files:
+- uploads.zip
+flags:
+- shellmates{1241.php-China-Chopper}
+name: yara newbie
+state: visible
+tags:
+- threat hunting
+- forensics
+topics:
+- threat hunting
+- forensics
+- malware
+type: dynamic
+value: 500
+version: '0.1'

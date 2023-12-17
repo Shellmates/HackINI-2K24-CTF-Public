@@ -1,0 +1,12 @@
+services:
+
+  crypto_app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - '5000:5000'
+    deploy:
+      replicas: 1
+      restart_policy:
+        condition: on-failure

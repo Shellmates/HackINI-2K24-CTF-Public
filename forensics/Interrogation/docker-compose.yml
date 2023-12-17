@@ -1,0 +1,12 @@
+services:
+  interrogation:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: interrogation
+    ports: 
+      - '1337:22'
+    deploy:
+      replicas: 1
+      restart_policy:
+        condition: on-failure

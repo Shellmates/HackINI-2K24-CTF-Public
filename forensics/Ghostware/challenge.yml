@@ -1,0 +1,32 @@
+Notes: null
+author: bnd
+author_link: www.linkedin.com/in/anesbendaoud
+category: forensics
+description: |-
+  > A ghost came to our home; he is hiding everywhere... everywhere. We can't find it! Maybe it's because he is living off the land?
+  > Find the two parts of the flag.
+  > zip file link: https://drive.google.com/file/d/1GC6NJbg9RYDcncmHGZXRoRO1-U2XIIpi/view?usp=sharing
+  > zip file password: ctf
+  > zip file md5 checksum: 185eab8ae5be0c69d00d478d6d22a886
+
+
+   **Author**: bnd
+difficulty: medium
+extra:
+  decay: 50
+  initial: 500
+  minimum: 50
+files:
+  - challenge.zip
+flags:
+  - shellmates{P3rS1$TEnC3_gH0$T_HuNtER_unlOCK3d_5uCc}
+name: Ghostware
+state: visible
+tags:
+  - persistence
+  - disk forensics
+topics: null
+type: dynamic
+value: 500
+version: '0.1'
+wave: 3

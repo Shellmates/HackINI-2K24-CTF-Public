@@ -1,0 +1,20 @@
+author: rx0f
+author_link: https://github.com/rx0f
+category: misc
+description: "> In our organization we make strict rules about our repositories.\n\
+  > We are suspsecting that one of our developers isn't following rules.\n> Can you\
+  \ make sure of it?\n   \n\n **Author**: rx0f"
+difficulty: easy
+extra:
+  decay: 50
+  initial: 500
+  minimum: 50
+flags:
+- shellmates{N0w_Y0u_Kn0W_4bOuT_d0cK3R_huB}
+name: hidden images
+state: visible
+tags:
+- OSINT
+type: dynamic
+value: 500
+version: '0.1'

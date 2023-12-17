@@ -1,0 +1,30 @@
+author: 4rk0, yh_0x7
+author_link: https://www.linkedin.com/in/abderahmane-oubahi-a72240243/
+category: crypto
+description: |-
+  > Dear hacker,
+  > We intercepted another super secret message from the enemy and we got a note saying it is double encrypted and we need you to decrypt it, good luck.
+
+
+   **Author**: 4rk0, yh_0x7
+difficulty: easy
+extra:
+  decay: 50
+  initial: 500
+  minimum: 50
+files:
+  - ./challenge/Challenge.py
+flags:
+  - shellmates{ev3n_D0Uble_EnCRYti0N_Is_B4D_WHeN_wE_ar3_UsINg_ThE_$Am3_K3y!}
+name: Beginner Hacker 2
+state: visible
+tags:
+  - crypto
+  - XOR
+topics:
+  - One Time Pad
+  - XOR
+type: dynamic
+value: 500
+version: '0.1'
+wave: 3

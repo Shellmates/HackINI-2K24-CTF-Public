@@ -1,0 +1,35 @@
+author: Izouss
+author_link: https://github.com/redasb31
+category: crypto
+connection_info: ncat -v --ssl ez-vdf.hackini24.shellmates.club 443
+deployment:
+  autoban: false
+  conn_type: nc
+  containerPort: 8000
+  deployed: true
+  isolate: false
+  name: ez-vdf
+  nodePort: 30292
+  type: tcp
+description: |-
+  > You don't have a super calculator? No worries! Your can use your brain instead.
+
+
+   **Author**: Izouss
+difficulty: medium
+extra:
+  decay: 50
+  initial: 500
+  minimum: 50
+files:
+  - ./challenge.py
+flags:
+  - shellmates{g3n3r4t0r_3xp0n3nt14t10n_f0r_th3_w1n}
+name: Ez_VDF
+state: visible
+tags:
+  - crypto
+type: dynamic
+value: 500
+version: '0.1'
+wave: 3

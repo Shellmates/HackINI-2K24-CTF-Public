@@ -1,0 +1,69 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('bg.png');
+    background-size: cover; 
+}
+
+
+
+h1{
+    color:#73dd07 ; 
+}
+
+
+div {
+    border-radius: 10px;
+    padding: 20px;
+    stroke: #73dd07;
+    text-align: center;
+    border-color: #73dd07;
+    text-align: center;
+    text-decoration-color: #73dd07;
+}
+
+input {
+    margin-top: 1rem;
+    font-weight: bold;
+    color: white;
+    padding: 0.5em;
+    background-color: transparent;
+    border: thin solid #73dd07;
+    border-radius: 10px;
+  }
+  
+input::file-selector-button {
+    font-weight: bold;
+    color: white;
+    padding: 0.5em;
+    background-color: transparent;
+    border: thin solid #73dd07;
+    border-radius: 10px;
+}
+
+input:hover{
+    
+    background-color: rgba(128, 128, 128, 0.476) ;
+
+} 
+#login{
+    border-radius: 10px;
+
+    height: 5em;
+    width: 10em;
+}
+#main{
+    padding: 0.5em;
+    border: thin solid #73dd07;
+    border-radius: 10px;
+    padding: 20%;  
+}
+
+
+p{
+    color: #73dd07;
+    font-size: xx-large;
+}

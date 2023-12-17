@@ -1,0 +1,25 @@
+author: letmewin
+author_link: https://www.linkedin.com/in/abdelkhalek-beraoud-707567245/
+category: misc
+description: "> Fares was my friend, we chatted online  \n>With our friends from Algeria,\
+  \ in 2010  \n>When online chatting was new and fine  \n>But we lost touch, and I\
+  \ don't know when  \n\n>I want to talk to him again, and catch up  \n>It is different\
+  \ now, back then we had forums not whatsapp  \n>I want to find him online, and chat\
+  \  \n>But I don't know how to do that, I need help  \n>Can you help me find him,\
+  \ and bring him back?  \n   \n\n **Author**: letmewin"
+difficulty: hard
+extra:
+  decay: 50
+  initial: 500
+  minimum: 50
+flags:
+- shellmates{th4Nk$_F0R_USinG_OsINT}
+name: My Friend
+state: visible
+tags:
+- OSINT
+topics:
+- OSINT
+type: dynamic
+value: 500
+version: '0.1'

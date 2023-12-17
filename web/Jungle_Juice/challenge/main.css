@@ -1,0 +1,62 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.authform {
+    width: 400px;
+    background-color: black;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+fieldset {
+    border: 2px solid black;
+    border-radius: 6px;
+    padding: 20px;
+    margin: 0;
+}
+
+legend {
+    font-size: 1.2em;
+    color: #db3434;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #350707;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: #db3434;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #b92929;
+}
+
+.return-value {
+    margin-top: 15px;
+    text-align: center;
+    color: #b36161;
+    font-weight: bold;
+}
+a {
+    color: #b92929;
+}
+input:focus::placeholder {
+    color: transparent;
+  }

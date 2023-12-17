@@ -1,0 +1,27 @@
+author: TheSun00000
+author_link: https://dz.linkedin.com/in/nazim-bendib-894167200
+category: misc
+description: |-
+  > Did you heard about Broken Neural Networks :)?
+
+
+   **Author**: TheSun00000
+difficulty: ezmed
+extra:
+  decay: 50
+  initial: 500
+  minimum: 50
+files:
+  - challenge/main.py
+  - challenge/data
+  - challenge/hacked_model.pt
+flags:
+  - shellmates{expert_in_debuggin}
+name: BNNs
+state: visible
+tags:
+  - ML
+  - python
+type: dynamic
+value: 500
+version: '0.1'

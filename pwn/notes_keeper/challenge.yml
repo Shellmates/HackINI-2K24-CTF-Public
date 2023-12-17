@@ -1,0 +1,33 @@
+author: F1OOw
+author_link: https://github.com/F1OOw
+category: pwn
+connection_info: ncat -v --ssl notes-keeper.hackini24.shellmates.club 443
+deployment:
+  autoban: false
+  conn_type: nc
+  containerPort: 3000
+  deployed: true
+  isolate: false
+  name: notes-keeper
+  nodePort: 30513
+  type: tcp
+description: "> This is a pretty nice app for stroing your notes...\n\n\n **Author**:\
+  \ F1OOw"
+difficulty: hard
+extra:
+  decay: 50
+  initial: 500
+  minimum: 50
+files:
+- src/chall.c
+- challenge/chall
+- Dockerfile
+flags:
+- shellmates{m4Ster_H3AP_fOR_r3a44A4a44A4444l}
+name: notes_keeper
+state: visible
+tags:
+- hard
+type: dynamic
+value: 500
+version: '0.1'

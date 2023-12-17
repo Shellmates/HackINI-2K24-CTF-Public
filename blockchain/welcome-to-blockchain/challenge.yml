@@ -1,0 +1,24 @@
+author: 0xbrivan
+author_link: https://www.linkedin.com/in/rezazi-mohamed-abdessamed
+category: blockchain
+description: "> My friend heard the hype about blockchain, he wanted to give it a\
+  \ try and he is playing a bit with Ethereum.\n> Because he is new to this field,\
+  \ he is playing with a testnet network called Sepolia. He found an interesting transaction\
+  \ there: 0xa7d1c8bf96e30371a1049c6332b077eac6877b8b0c6191e362cc1702c5de4c7a\n\n\n\
+  \ **Author**: 0xbrivan"
+difficulty: easy
+extra:
+  decay: 50
+  initial: 500
+  minimum: 50
+flags:
+- shellmates{W3lcOME_tO_3tH3r3um_h4ve_fun}
+name: Welcome To Blockchain
+state: visible
+tags:
+- entry level
+- osint
+type: dynamic
+value: 500
+version: '0.1'
+wave: 1

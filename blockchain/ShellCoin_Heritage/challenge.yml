@@ -1,0 +1,32 @@
+author: j3x
+category: blockchain
+description: "> Today in 2069, money is exclusively digital, and Bob's Grandpa, left\
+  \ his considerable fortune of ShellCoin cryptocurrency to his young grandson. To\
+  \ ensure the heir's responsible use, the Grandpa assured that the inheritance is\
+  \ released only 30 years after his passing, and he entrusted a will executor with\
+  \ this mission.  \n> But the will executor, tempted by the potential wealth, attempts\
+  \ to move the fortune to an external account, aiming to gain unrestricted control\
+  \ over the inheritance, will he succeed to drain the contract ?  \n> challenge page:\
+  \ [http://blockchain2.shellmates.club/shellcoin/](http://blockchain2.shellmates.club/shellcoin/)\n\
+  \   \n\n **Author**: j3x"
+difficulty: easy
+extra:
+  decay: 50
+  initial: 500
+  minimum: 50
+files:
+- contracts/ShellCoin.sol
+- contracts/Setup.sol
+- contract/ERC20.sol
+flags:
+- shellmates{the_CONTrACT_1nheRiT3d__4nD_ThE_GR4nDSOn_d1D_n0t__th4T$_1mProPer_acCes$_c0nTRoL}
+name: ShellCoin Heritage
+state: visible
+tags:
+- solidity
+topics:
+- ERC20 Tokens
+- Improper Access Control
+type: dynamic
+value: 500
+version: '0.1'

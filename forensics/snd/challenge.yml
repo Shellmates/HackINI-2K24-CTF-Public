@@ -1,0 +1,23 @@
+author: bnd
+author_link: www.linkedin.com/in/anesbendaoud
+category: forensics
+description: |-
+  > I'm looking for a secret, but I don't know if I spelled it right.
+
+
+   **Author**: bnd
+difficulty: easy
+extra:
+  decay: 50
+  initial: 500
+  minimum: 50
+files:
+  - pcap.txt
+flags:
+  - shellmates{c2_s3RVER_mIgHt_UsE_TXt_R3c0RdS!!}
+name: snd
+state: visible
+type: dynamic
+value: 500
+version: '0.1'
+wave: 3

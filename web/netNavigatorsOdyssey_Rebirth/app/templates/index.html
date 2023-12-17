@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Network Panel v2.0</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000000;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            overflow: auto;
+        }
+
+        .title {
+            font-family: cursive;
+            font-size: 35px;
+            color: white;
+            text-shadow: 3px 2px 5px #00FF00;
+            padding: 10px 20px;
+            text-align: center;
+            border-radius: 10px;
+            background-color: #000000;
+            margin-top: 20px;
+            z-index: 1;
+        }
+
+        .container {
+            background-color: #000000;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+            text-align: center;
+            margin-top: 20px;
+            position: relative;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            font-family: cursive;
+            font-size: 28px;
+            text-shadow: 3px 2px 5px #00FF00;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+            color: rgb(235, 228, 228);
+        }
+
+        .form-group textarea[type="text"] {
+            width: calc(100% - 22px);
+            padding: 12px;
+            font-size: 15px;
+            border-color: #45a049;
+            box-shadow: 0px 0px 6px rgba(0, 255, 0, 0.5);
+            border-radius: 8px;
+            margin-bottom: 25px;
+            box-sizing: border-box;
+            background-color: #000000;
+            color: #1fdf1f;
+            font-family: 'Courier New', Courier, monospace;
+    }
+        .form-group input[type="submit"] {
+            width: 100px;
+            padding: 10px;
+            font-size: 18px;
+            font-family: cursive;
+            box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+            background-color: #1cb81c;
+            color: #ffffff;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+        .form-group input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        .result {
+        white-space: pre-line;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 16px;
+        max-height: 300px;
+        overflow-y: auto;
+        color: white;
+        text-shadow: 2px 2px 5px #00FF00;
+    }
+    </style>
+</head>
+<body>
+    <div class="title">
+        <h1>Network Panel: v2.0</h1> 
+    </div>
+
+    <div class="container">
+        <form method="POST">
+            <div class="form-group">
+                <label>Enter an option:</label>
+                <textarea id="option" name="option" type="text" style="height: 40px;"></textarea>
+                <input type="submit" value="Run">
+            </div>
+        </form>
+        <div class="result"></div>
+    </div>
+
+    <script>
+        const form = document.querySelector('form');
+        const resultDiv = document.querySelector('.result');
+    
+        const fetchData = async () => {
+            try {
+                const formData = new FormData(form);
+                const response = await fetch('/', {
+                    method: 'POST', 
+                    body: formData
+                });
+                return await response.text();
+            } catch (error) {
+                throw new Error(error.message);
+            }
+        };
+    
+        const handleSubmission = async () => {
+            try {
+                const data = await fetchData();
+                resultDiv.textContent = data;
+            } catch (error) {
+                resultDiv.textContent = `Error: ${error.message}`;
+            }
+        };
+    
+        form.addEventListener('submit', async (event) => {
+            event.preventDefault();
+            await handleSubmission();
+        });
+    
+        const optionTextArea = document.getElementById('option');
+        optionTextArea.addEventListener('keydown', async (event) => {
+            if (event.key === 'Enter' && !event.shiftKey) {
+                event.preventDefault();
+                await handleSubmission();
+            }
+        });
+    </script>
+    
+</body>
+</html>

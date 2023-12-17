@@ -1,0 +1,32 @@
+author: F100w
+author_link: https://github.com/F1OOw
+category: pwn
+connection_info: ncat -v --ssl bof0.hackini24.shellmates.club 443
+deployment:
+  autoban: false
+  conn_type: nc
+  containerPort: 3000
+  deployed: true
+  isolate: false
+  name: bof0
+  nodePort: 30506
+  type: tcp
+description: "> Is it even possible ?!    \n   \n\n **Author**: F100w"
+difficulty: easy
+extra:
+  decay: 50
+  initial: 500
+  minimum: 50
+files:
+- challenge/chall
+- src/chall.c
+flags:
+- shellmates{WElC0me_to_PWn_w3LCoM3_t0_BOf}
+name: bof0
+state: hidden
+tags:
+- easy
+type: dynamic
+value: 500
+version: '0.1'
+wave: 1

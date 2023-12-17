@@ -1,0 +1,30 @@
+---
+- hosts: localhost
+  tasks:
+
+    - name: Step 01
+      archive:
+        path: ~/Desktop/Backup
+        dest: ~/Desktop/Backup.tar.gz
+
+    - name: Step 02
+      ansible.builtin.command: "ansible-vault encrypt ~/Desktop/Backup.tar.gz --vault-id=~/Desktop/my_secret.txt"
+
+    - name: Step 03
+      ansible.builtin.git:
+        repo: https://github.com/4NG3L-4/Backeup.git
+        dest: ~/Desktop
+    
+    - name: Step 04
+      ansible.builtin.copy:
+        src: ~/Desktop/Backup.tar.gz
+        dest: ~/Desktop/Backeup/Backup.tar.gz
+
+    - name: Step 05
+      ansible.builtin.git:
+        repo: ~/Desktop/Backeup
+        dest: ~/Desktop/Backeup
+        remote: origin
+        push: yes
+        force: yes
+        commit_msg: "ADD Backup" 

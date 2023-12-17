@@ -1,0 +1,33 @@
+author: m0kr4n3
+author_link: https://github.com/m0kr4n3
+category: web
+connection_info: https://can-you.hackini24.shellmates.club
+deployment:
+  autoban: false
+  conn_type: http
+  containerPort: 1337
+  deployed: true
+  isolate: false
+  name: can-you
+  nodePort: 30114
+  type: http
+description: |-
+  > Can you?
+
+
+   **Author**: m0kr4n3
+difficulty: easy
+extra:
+  decay: 50
+  initial: 500
+  minimum: 50
+flags:
+  - shellmatess{c0ntr0l_th3_50urc3_p0rt5_4nd_y0u_c0ntr0l_th3_w0rld}
+name: can_you?
+state: visible
+tags:
+  - web
+type: dynamic
+value: 500
+version: '0.1'
+wave: 3

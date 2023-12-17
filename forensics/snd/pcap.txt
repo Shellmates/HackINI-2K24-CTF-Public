@@ -1,0 +1,56 @@
+    1   0.000000    10.0.2.15 → 10.0.0.10    53 38820 DNS 86 Standard query 0x1168 A xtt OPT
+    2   0.003474    10.0.0.10 → 10.0.2.15    38820 53 DNS 74 Standard query response 0x1168 Server failure A xtt OPT
+    3   0.008189    10.0.2.15 → 10.0.0.10    53 54946 DNS 107 Standard query 0x6df7 A dnsecret.shellmates.club OPT
+    4   0.012088    10.0.0.10 → 10.0.2.15    54946 53 DNS 159 Standard query response 0x6df7 A dnsecret.shellmates.club SOA chance.ns.cloudflare.com OPT
+    5   2.151379    10.0.2.15 → 10.0.0.10    53 33776 DNS 86 Standard query 0xef5b A ttt OPT
+    6   2.160642    10.0.0.10 → 10.0.2.15    33776 53 DNS 74 Standard query response 0xef5b Server failure A ttt OPT
+    7   2.161307    10.0.2.15 → 10.0.0.10    53 56295 DNS 107 Standard query 0x721d A dnsecret.shellmates.club OPT
+    8   2.166762    10.0.0.10 → 10.0.2.15    56295 53 DNS 159 Standard query response 0x721d A dnsecret.shellmates.club SOA chance.ns.cloudflare.com OPT
+   11   7.274643    10.0.2.15 → 10.0.0.10    53 49839 DNS 86 Standard query 0x63ae A ttt OPT
+   12   7.279491    10.0.0.10 → 10.0.2.15    49839 53 DNS 74 Standard query response 0x63ae Server failure A ttt OPT
+   13   7.280249    10.0.2.15 → 10.0.0.10    53 49565 DNS 107 Standard query 0xa9b3 A dnsecret.shellmates.club OPT
+   14   7.284131    10.0.0.10 → 10.0.2.15    49565 53 DNS 159 Standard query response 0xa9b3 A dnsecret.shellmates.club SOA chance.ns.cloudflare.com OPT
+   15  10.980699    10.0.2.15 → 10.0.0.10    53 39420 DNS 86 Standard query 0x539a A xxx OPT
+   16  10.987505    10.0.0.10 → 10.0.2.15    39420 53 DNS 74 Standard query response 0x539a Server failure A xxx OPT
+   17  10.988463    10.0.2.15 → 10.0.0.10    53 33536 DNS 107 Standard query 0x6ae6 A dnsecret.shellmates.club OPT
+   18  10.991968    10.0.0.10 → 10.0.2.15    33536 53 DNS 159 Standard query response 0x6ae6 A dnsecret.shellmates.club SOA chance.ns.cloudflare.com OPT
+   19  14.275254    10.0.2.15 → 10.0.0.10    53 51870 DNS 86 Standard query 0xe659 A ttt OPT
+   20  14.282425    10.0.0.10 → 10.0.2.15    51870 53 DNS 74 Standard query response 0xe659 Server failure A ttt OPT
+   21  14.283145    10.0.2.15 → 10.0.0.10    53 54646 DNS 107 Standard query 0x28a3 A dnsecret.shellmates.club OPT
+   22  14.285456    10.0.0.10 → 10.0.2.15    54646 53 DNS 159 Standard query response 0x28a3 A dnsecret.shellmates.club SOA chance.ns.cloudflare.com OPT
+   23  15.963108    10.0.2.15 → 10.0.0.10    53 49530 DNS 86 Standard query 0x06d1 A xxx OPT
+   24  15.966784    10.0.0.10 → 10.0.2.15    49530 53 DNS 74 Standard query response 0x06d1 Server failure A xxx OPT
+   25  15.967515    10.0.2.15 → 10.0.0.10    53 40871 DNS 107 Standard query 0x2ede A dnsecret.shellmates.club OPT
+   26  15.971410    10.0.0.10 → 10.0.2.15    40871 53 DNS 159 Standard query response 0x2ede A dnsecret.shellmates.club SOA chance.ns.cloudflare.com OPT
+   27  18.942670    10.0.2.15 → 10.0.0.10    53 55585 DNS 86 Standard query 0xf6b3 A xtt OPT
+   28  18.946212    10.0.0.10 → 10.0.2.15    55585 53 DNS 74 Standard query response 0xf6b3 Server failure A xtt OPT
+   29  18.947335    10.0.2.15 → 10.0.0.10    53 49715 DNS 107 Standard query 0xa4c2 A dnsecret.shellmates.club OPT
+   30  18.951756    10.0.0.10 → 10.0.2.15    49715 53 DNS 159 Standard query response 0xa4c2 A dnsecret.shellmates.club SOA chance.ns.cloudflare.com OPT
+   31  20.915898    10.0.2.15 → 10.0.0.10    53 51536 DNS 86 Standard query 0x013b A xtt OPT
+   32  20.924705    10.0.0.10 → 10.0.2.15    51536 53 DNS 74 Standard query response 0x013b Server failure A xtt OPT
+   33  20.925320    10.0.2.15 → 10.0.0.10    53 50331 DNS 107 Standard query 0x85f3 A dnsecret.shellmates.club OPT
+   34  20.942928    10.0.0.10 → 10.0.2.15    50331 53 DNS 159 Standard query response 0x85f3 A dnsecret.shellmates.club SOA chance.ns.cloudflare.com OPT
+   35  23.883296    10.0.2.15 → 10.0.0.10    53 33821 DNS 86 Standard query 0x1076 A xtx OPT
+   36  23.887088    10.0.0.10 → 10.0.2.15    33821 53 DNS 74 Standard query response 0x1076 Server failure A xtx OPT
+   37  23.888041    10.0.2.15 → 10.0.0.10    53 51347 DNS 107 Standard query 0xc01d A dnsecret.shellmates.club OPT
+   38  23.895768    10.0.0.10 → 10.0.2.15    51347 53 DNS 159 Standard query response 0xc01d A dnsecret.shellmates.club SOA chance.ns.cloudflare.com OPT
+   39  26.475548    10.0.2.15 → 10.0.0.10    53 42722 DNS 86 Standard query 0x3fa7 A ttt OPT
+   40  26.480365    10.0.0.10 → 10.0.2.15    42722 53 DNS 74 Standard query response 0x3fa7 Server failure A ttt OPT
+   41  26.481053    10.0.2.15 → 10.0.0.10    53 34786 DNS 107 Standard query 0xe894 A dnsecret.shellmates.club OPT
+   42  26.484756    10.0.0.10 → 10.0.2.15    34786 53 DNS 159 Standard query response 0xe894 A dnsecret.shellmates.club SOA chance.ns.cloudflare.com OPT
+   43  30.793895    10.0.2.15 → 10.0.0.10    53 50378 DNS 86 Standard query 0x8d2c A ttx OPT
+   44  30.800096    10.0.0.10 → 10.0.2.15    50378 53 DNS 74 Standard query response 0x8d2c Server failure A ttx OPT
+   45  30.801055    10.0.2.15 → 10.0.0.10    53 59062 DNS 107 Standard query 0x7546 A dnsecret.shellmates.club OPT
+   46  30.805403    10.0.0.10 → 10.0.2.15    59062 53 DNS 159 Standard query response 0x7546 A dnsecret.shellmates.club SOA chance.ns.cloudflare.com OPT
+   47  32.792323    10.0.2.15 → 10.0.0.10    53 54728 DNS 86 Standard query 0xb62b A xtx OPT
+   48  32.796772    10.0.0.10 → 10.0.2.15    54728 53 DNS 74 Standard query response 0xb62b Server failure A xtx OPT
+   49  32.797472    10.0.2.15 → 10.0.0.10    53 57452 DNS 107 Standard query 0xebfc A dnsecret.shellmates.club OPT
+   50  32.801234    10.0.0.10 → 10.0.2.15    57452 53 DNS 159 Standard query response 0xebfc A dnsecret.shellmates.club SOA chance.ns.cloudflare.com OPT
+   51  35.594052    10.0.2.15 → 10.0.0.10    53 38952 DNS 86 Standard query 0x40ff A xtx OPT
+   52  35.596943    10.0.0.10 → 10.0.2.15    38952 53 DNS 74 Standard query response 0x40ff Server failure A xtx OPT
+   53  35.597717    10.0.2.15 → 10.0.0.10    53 53614 DNS 107 Standard query 0xfa9e A dnsecret.shellmates.club OPT
+   54  35.600321    10.0.0.10 → 10.0.2.15    53614 53 DNS 159 Standard query response 0xfa9e A dnsecret.shellmates.club SOA chance.ns.cloudflare.com OPT
+   55  41.414104    10.0.2.15 → 10.0.0.10    53 54229 DNS 86 Standard query 0x4a47 A xxt OPT
+   56  41.416844    10.0.0.10 → 10.0.2.15    54229 53 DNS 74 Standard query response 0x4a47 Server failure A xxt OPT
+   57  41.417465    10.0.2.15 → 10.0.0.10    53 43978 DNS 107 Standard query 0x8b77 A dnsecret.shellmates.club OPT
+   58  41.419836    10.0.0.10 → 10.0.2.15    43978 53 DNS 159 Standard query response 0x8b77 A dnsecret.shellmates.club SOA chance.ns.cloudflare.com OPT

@@ -1,0 +1,32 @@
+author: 3L1l0uM
+author_link: https://www.linkedin.com/in/abdelalim-atoui-b2043923b/
+category: crypto
+connection_info: ncat -v --ssl diffie-3ilman.hackini24.shellmates.club 443
+deployment:
+  autoban: false
+  conn_type: nc
+  containerPort: 1337
+  deployed: true
+  isolate: false
+  name: diffie-3ilman
+  nodePort: 30201
+  type: tcp
+description: "> I heard that we can't do anything with diffie hellman public key,\
+  \ is it true ??\n   \n\n **Author**: 3L1l0uM"
+difficulty: medium
+extra:
+  decay: 50
+  initial: 500
+  minimum: 50
+files:
+- challenge/script.py
+flags:
+- shellmates{D0_n0t_L3t_Str4ngers_Pl4y_w1th_D1ffie_H3llman_p4ram$}
+name: Diffie_3ilman
+state: hidden
+tags:
+- crypto
+type: dynamic
+value: 500
+version: '0.1'
+wave: 1

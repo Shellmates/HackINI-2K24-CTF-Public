@@ -1,0 +1,36 @@
+author: F100w
+author_link: https://github.com/F1OOw
+category: pwn
+connection_info: ncat -v --ssl sportsman.hackini24.shellmates.club 443
+deployment:
+  autoban: false
+  conn_type: nc
+  containerPort: 3000
+  deployed: true
+  isolate: false
+  name: sportsman
+  nodePort: 30511
+  type: tcp
+description: |-
+  > I have this school project to deliver tomorrow, I can't finish that on time !
+
+
+   **Author**: F100w
+difficulty: medium
+extra:
+  decay: 50
+  initial: 500
+  minimum: 50
+files:
+  - challenge/chall
+  - src/chall.c
+flags:
+  - shellamtes{BoF_i$_AL$0_th3R3_In_Da_h3ap}
+name: sportsman
+state: visible
+tags:
+  - medium
+type: dynamic
+value: 500
+version: '0.1'
+wave: 3

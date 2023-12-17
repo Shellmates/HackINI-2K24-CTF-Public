@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Pannel</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #555;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .response {
+            margin-top: 16px;
+            text-align: center;
+            color: #333;
+        }
+
+        .response p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>My admin pannel</h2>
+        <form id="jsonForm" method="post" onsubmit="submitForm(event)">
+            <label for="url_input">URL Input:</label>
+            <input type="url" id="url_input" name="url_input" placeholder="http://localhost:port/something" required>
+            <input type="submit" value="Submit">
+        </form>
+
+        <script>
+            function submitForm(event) {
+                event.preventDefault();
+                const urlInput = document.getElementById('url_input').value;
+                const jsonData = { "url": urlInput };
+
+                fetch('/operation', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(jsonData)
+                })
+                .then(response => response.json())
+                .then(data => {
+                    const responseContainer = document.querySelector('.response');
+                    responseContainer.innerHTML = `
+                        <h3>Response:</h3>
+                        <p>${data.msg}</p>
+                    `;
+                })
+                .catch(error => console.error('Error:', error));
+            }
+        </script>
+
+        <div class="response"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,20 @@
+author: R***f
+author_link: https://www.linkedin.com/in/abderraouf-dandani/
+category: crypto
+description: "> \u8BF7\u6062\u590D\u6211\u7684\u65D7\u5E1C :( \n   \n\n **Author**:\
+  \ R***f"
+difficulty: ezmed
+extra:
+  decay: 50
+  initial: 500
+  minimum: 50
+files:
+- challenge/challenge.py
+- challenge/out.txt
+flags:
+- shellmates{CRT?l05T_b1t5?_No0o_pR0blem!}
+name: Chinese Conundrum
+state: visible
+type: dynamic
+value: 500
+version: '0.1'

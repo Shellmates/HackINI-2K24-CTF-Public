@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memes Hub</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .meme-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .meme-card {
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #fff;
+        }
+
+        .download-btn {
+            padding: 5px 10px;
+            margin-top: 10px;
+            text-decoration: none;
+            background-color: #4caf50;
+            color: #fff;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meme Hubs</h1>
+    <div class="meme-container" id="meme-container">
+    </div>
+
+    <script>
+        function loadMemes() {
+            var memes = ['salt.png', 'mrigla.png', 'stik-tak-tok.png'];
+
+            var container = document.getElementById('meme-container');
+            container.innerHTML = '';
+
+            memes.forEach(function (meme) {
+                var card = document.createElement('div');
+                card.className = 'meme-card';
+
+                var image = document.createElement('img');
+                image.src = '/download?file=' + encodeURIComponent(meme);
+                image.alt = meme;
+
+                var downloadBtn = document.createElement('a');
+                downloadBtn.href = '/download?file=' + encodeURIComponent(meme);
+                downloadBtn.className = 'download-btn';
+                downloadBtn.innerText = 'Download';
+
+                card.appendChild(image);
+                card.appendChild(downloadBtn);
+                container.appendChild(card);
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            loadMemes();
+        });
+    </script>
+</body>
+</html>

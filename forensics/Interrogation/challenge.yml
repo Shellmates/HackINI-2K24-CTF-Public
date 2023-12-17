@@ -1,0 +1,46 @@
+author: 4NG3L
+author_link: https://github.com/4NG3L-4
+category: forensics
+connection_info: ssh ctf@interrogation.hackini24.shellmates.club -o ProxyCommand="openssl
+  s_client -quiet -connect interrogation.hackini24.shellmates.club:443 -servername
+  interrogation.hackini24.shellmates.club"
+deployment:
+  autoban: false
+  conn_type: ssh
+  containerPort: 22
+  deployed: true
+  isolate: false
+  name: interrogation
+  nodePort: 30300
+  type: tcp
+description: "> In the latest case of Sherlock, a breach at the London Tower was executed\
+  \ with just a few lines of code. The perpetrator, the famous criminal consultant\
+  \ Moriarty, has been arrested. However, despite hours of interrogation, Moriarty\
+  \ has remained tight-lipped about both the software he used and the group he represents.\
+  \ As a result, our IT experts have turned their attention to his laptop. But Sherlock\
+  \ has warned us that Moriarty may have an anti-forensics laptop that adds an additional\
+  \ layer of complexity. By taking a look at his machine, Can you figure out the tool\
+  \ he used, the group he's affiliated with and the server used for coordination?\
+  \   \n> Flag format: shellmates{ToolName_GroupName_ServerName}  \n> Username: ctf\
+  \  \n> Password: ctf\n   \n\n **Author**: 4NG3L"
+difficulty: ezmed
+extra:
+  decay: 15
+  initial: 500
+  minimum: 50
+flags:
+- shellmates{Cr1m3m4st3rm1ndK1t_APT221_Th3Sh3rl0ck3d}
+image: interrogation
+name: Interrogation
+state: visible
+tags:
+- forensics
+- Endpoint
+- anti-antiforensics
+topics:
+- Osquery
+- Anti-antiforensics
+type: dynamic
+value: 500
+version: '0.1'
+wave: 1

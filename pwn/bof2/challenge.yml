@@ -1,0 +1,34 @@
+author: F100w
+author_link: https://github.com/F1OOw
+category: pwn
+connection_info: ncat -v --ssl bof2.hackini24.shellmates.club 443
+deployment:
+  autoban: false
+  conn_type: nc
+  containerPort: 3000
+  deployed: true
+  isolate: false
+  name: bof2
+  nodePort: 30508
+  type: tcp
+description: "> Well well well, libc is heaven in pwn !\n\n\n **Author**: F100w"
+difficulty: ezmed
+extra:
+  decay: 50
+  initial: 500
+  minimum: 50
+files:
+- challenge/chall
+- src/chall.c
+- src/libc.so.6
+- src/ld-linux.so.2
+flags:
+- shellmates{YOU_CaN_D0_4_loT_W1tH_R3t_2_liBc}
+name: bof2
+state: visible
+tags:
+- ezmed
+type: dynamic
+value: 500
+version: '0.1'
+wave: 1

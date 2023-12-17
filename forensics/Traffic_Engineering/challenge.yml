@@ -1,0 +1,28 @@
+author: letmewin, R***f
+author_link: ''
+category: forensics
+description: "> During a recent operation, I managed to exfiltrate a Wi-Fi password\
+  \ from a network by exploiting a vulnerability in an exposed webserver hosted on\
+  \ the target system.So I tried  to capture the over-the-air traffic of that network\
+  \ .  Unfortunately, the network capture got corrupted. Your task is to assist in\
+  \ recovering the corrupted file and leveraging the exfiltrated password to decrypt\
+  \ the traffic. Unravel the mystery within the compromised network traffic.\n   \n\
+  \n **Author**: letmewin, R***f"
+difficulty: medhard
+extra:
+  decay: 50
+  initial: 500
+  minimum: 50
+files:
+- challenge/challenge.zip
+flags:
+- shellmates{wp4_h3cker_4nd_traffic_eng1ne3ring}
+name: Traffic Engineering
+state: hidden
+tags:
+- forensics
+- networking
+type: dynamic
+value: 500
+version: '0.1'
+wave: 1

@@ -1,0 +1,31 @@
+author: chenx3n
+author_link: https://github.com/malikDaCoda
+category: pwn
+connection_info: ncat -v --ssl fmt1.hackini24.shellmates.club 443
+deployment:
+  autoban: false
+  conn_type: nc
+  containerPort: 3000
+  deployed: true
+  isolate: false
+  name: fmt1
+  nodePort: 30522
+  type: tcp
+description: "> Echo as a Service!\n   \n\n **Author**: chenx3n"
+difficulty: easy
+extra:
+  decay: 50
+  initial: 500
+  minimum: 50
+files:
+- files/fmt1.zip
+flags:
+- shellmates{My_FiR$T_f0RmAt_sTRinG!}
+name: fmt1
+state: hidden
+tags:
+- easy
+type: dynamic
+value: 500
+version: '0.1'
+wave: 1

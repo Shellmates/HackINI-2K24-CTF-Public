@@ -1,0 +1,32 @@
+author: ouxs
+author_link: github.com/ouxs-19
+category: web
+connection_info: https://gof.hackini24.shellmates.club
+deployment:
+  autoban: false
+  conn_type: http
+  containerPort: 80
+  deployed: true
+  isolate: false
+  name: gof
+  nodePort: 30116
+  type: http
+description: |-
+  > We remade our club organization website.
+  > Check it out.
+
+
+   **Author**: ouxs
+difficulty: medium
+extra:
+  decay: 50
+  initial: 500
+  minimum: 50
+flags:
+  - shellmates{go_go_go_GoOOOPHER}
+name: GOF
+state: visible
+type: dynamic
+value: 500
+version: '0.1'
+wave: 3

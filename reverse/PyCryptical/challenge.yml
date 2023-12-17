@@ -1,0 +1,35 @@
+author: j3x
+author_link: https://github.com/0x0000000000000j3x/
+category: reverse
+connection_info: ncat -v --ssl pycryptical.hackini24.shellmates.club 443
+deployment:
+  autoban: false
+  conn_type: nc
+  containerPort: 1337
+  deployed: true
+  isolate: false
+  name: pycryptical
+  nodePort: 30701
+  type: tcp
+description: "> The enigmatic wizards of Shellmates have devised a perplexing puzzle\
+  \ to test your mettle. Deep within the realm of ancient Python 2 incantations, a\
+  \ hidden message lies encrypted, shielded by a veil of cryptic charm.\n\n\n **Author**:\
+  \ j3x"
+difficulty: medium
+extra:
+  decay: 50
+  initial: 500
+  minimum: 50
+files:
+- ./chall.pyc
+flags:
+- shellmates{Cr4ck3D_PyC_As_4_5harP_p1k3}
+image: pycryptical
+name: PyCryptical
+state: visible
+topics:
+- PyC
+- ez crypto
+type: dynamic
+value: 500
+version: '0.1'

@@ -1,0 +1,22 @@
+author: Izouss
+author_link: https://github.com/redasb31
+category: crypto
+description: "> Our newbie cryptographer, thought that encrypting the secret document\
+  \ twice would be safe. Do you think he made a mistake?\n   \n\n **Author**: Izouss"
+difficulty: medium
+extra:
+  decay: 50
+  initial: 500
+  minimum: 50
+files:
+- challenge/challenge.py
+- challenge/out.txt
+flags:
+- shellmates{t00_3asy_4_a_gcd_m4st3r}
+name: Goofy_Cipher_Delusion
+state: visible
+tags:
+- crypto
+type: dynamic
+value: 500
+version: '0.1'

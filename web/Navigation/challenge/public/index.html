@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Navigation</title>
+</head>
+<body>
+    <div class="container mt-5">
+
+    <h1>Welcome to my Navigation Website !</h1>
+
+    <form method="post" action="/go_somewhere" id="form" novalidate class="mt-3">
+        <div class="form-group row">
+            <label for="path" class="col-sm-1 col-form-label">Link</label>
+            <div class="col-sm-11">
+              <input type="text" class="form-control" id="path" name="path" placeholder="Add Url to go somewhere...">
+            </div>
+          </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+author: j3x
+author_link: https://github.com/0x0000000000000j3x/
+category: web
+connection_info: https://network-navigators-odyssey.hackini24.shellmates.club
+deployment:
+  autoban: false
+  conn_type: http
+  containerPort: 5000
+  deployed: true
+  isolate: false
+  name: network-navigators-odyssey
+  nodePort: 30105
+  type: http
+description: "> I used to work as a network engineer at a prominent company, but I\
+  \ found myself unjustly terminated. The cause? Our network administrator inadvertently\
+  \ shut down a critical interface and then placed the blame on my shoulders to salvage\
+  \ his own reputation.  \n> Remarkably, I still retain access to the very panel we\
+  \ once utilized to oversee the network architecture of the company. Now, I seek\
+  \ a talented hacker to exact revenge on my behalf, I am prepared to offer a handsome\
+  \ reward to anyone who could breach this panel's security. Do you possess the expertise\
+  \ and audacity to help me reclaim justice ?\"  \n   \n\n **Author**: j3x"
+difficulty: medium
+extra:
+  decay: 50
+  initial: 500
+  minimum: 50
+files:
+- ./app/app.py
+flags:
+- shellmates{S1l3nc3d_S3rv3r5___Ech0_Just1c3}
+image: networknavigatorsoddyssey
+name: Network Navigators Odyssey
+state: visible
+topics:
+- command injection
+type: dynamic
+value: 500
+version: '0.1'
+wave: 1

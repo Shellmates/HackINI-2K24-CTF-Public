@@ -1,0 +1,35 @@
+author: yh_0x7
+author_link: https://github.com/yh-0x7
+category: misc
+connection_info: ncat -v --ssl eul3rs-jail.hackini24.shellmates.club 443
+deployment:
+  autoban: false
+  conn_type: nc
+  containerPort: 1337
+  deployed: true
+  isolate: false
+  name: eul3rs-jail
+  nodePort: 30414
+  type: tcp
+description: |-
+  > Do you know how to escape from a jail II?
+
+
+   **Author**: yh_0x7
+difficulty: medhard
+extra:
+  decay: 50
+  initial: 500
+  minimum: 50
+files:
+  - challenge/script.py
+flags:
+  - shellmates{4RG5_w17H_m47r1x_MUL71PL1C471oN}
+name: eul3rs_jail
+state: visible
+tags:
+  - jail
+  - python
+type: dynamic
+value: 500
+version: '0.1'

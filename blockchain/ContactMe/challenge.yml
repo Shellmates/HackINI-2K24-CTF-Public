@@ -1,0 +1,25 @@
+author: j3x
+category: blockchain
+description: "> If you need something (e.g: a flag), you can call me at 7.\n> challenge\
+  \ page : [http://blockchain1.shellmates.club/contactme/](http://blockchain1.shellmates.club/contactme/)\n\
+  \n\n **Author**: j3x"
+difficulty: easy
+extra:
+  decay: 50
+  initial: 500
+  minimum: 50
+files:
+- contracts/Setup.sol
+flags:
+- shellmates{U_c0ntRACteD_m3_$ucce$sFullY_0x007}
+name: Contact Me
+state: visible
+tags:
+- entry level
+- solidity
+topics:
+- Calling a solidity function.
+type: dynamic
+value: 500
+version: '0.1'
+wave: 1

@@ -1,0 +1,20 @@
+author: rx0f
+author_link: https://github.com/rx0f
+category: reverse
+description: "> Native and not native at the same time?. \n**Author** : rx0f\n"
+difficulty: medium
+extra:
+  decay: 50
+  initial: 500
+  minimum: 50
+files:
+- challenge/not-native.apk
+flags:
+- shellmates{h3rm35_45_4_n3W_R34cT_n4T1v3_3Ng1n3}
+name: not native
+state: visible
+tags:
+- reverse
+type: dynamic
+value: 500
+version: '0.1'

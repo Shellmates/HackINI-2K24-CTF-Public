@@ -1,0 +1,26 @@
+author: 4rk0
+author_link: https://www.linkedin.com/in/abderahmane-oubahi-a72240243/
+category: crypto
+description: "> Dear hacker,\n> We intercepted a super secret message from the enemy\
+  \ and we need you to decrypt it, good luck. \n   \n\n **Author**: 4rk0"
+difficulty: easy
+extra:
+  decay: 50
+  initial: 500
+  minimum: 50
+files:
+- ./challenge/Challenge.py
+flags:
+- shellmates{1_gu3SS_R4nD0mn3Ss_d0es_NOt_ALWAyS_mE4N_yoU_R_$eCur3!}
+name: Beginner Hacker 1
+state: hidden
+tags:
+- crypto
+- XOR
+topics:
+- One Time Pad
+- XOR
+type: dynamic
+value: 500
+version: '0.1'
+wave: 1

@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  my_service:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "1337:1337"
+    environment:
+      - PASSPHRASE=R3vers3_My_B3l0v3d__r3veR5e

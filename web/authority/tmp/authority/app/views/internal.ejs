@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Parser control | <%= title %></title>
+</head>
+<body>
+    <h1>Welcome </h1>
+    <p>You can fetch internal pages using the following input field</p>
+    <form action="/request" method="GET">
+        <input type="text" name="endpoint">
+        <input type="submit">
+        <% if (endpoint){%>
+            <%= endpoint %>
+        <%}else{%>
+            <h3>No url Provided please submit url</h3>
+        <%}%>
+    </form>
+</body>
+</html>

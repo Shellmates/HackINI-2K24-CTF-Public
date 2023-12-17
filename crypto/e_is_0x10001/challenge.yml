@@ -1,0 +1,36 @@
+author: 3L1l0uM
+author_link: https://www.linkedin.com/in/abdelalim-atoui-b2043923b/
+category: crypto
+connection_info: https://e-is-0x10001.hackini24.shellmates.club
+deployment:
+  autoban: false
+  conn_type: http
+  containerPort: 5000
+  deployed: true
+  isolate: false
+  name: e-is-0x10001
+  nodePort: 30202
+  type: http
+description: |-
+  > I have a wonderful plateform that encrypts all my messages ...
+  > But I have a mysterious route that encypts my secret message ...
+
+
+   **Author**: 3L1l0uM
+difficulty: medium
+extra:
+  decay: 50
+  initial: 500
+  minimum: 50
+files:
+  - challenge/app.py
+flags:
+  - shellmates{pleAs3_leT_RSA_PuBL1c_key_$tAt1c_4Nd_Us3_iT_FoR_ALL_y0uR_Mes$4G3$}
+name: e_is_0x10001
+state: visible
+tags:
+  - crypto
+type: dynamic
+value: 500
+version: '0.1'
+wave: 3

@@ -1,0 +1,31 @@
+author: yh_0x7
+author_link: https://github.com/yh-0x7
+category: misc
+connection_info: ncat -v --ssl equal5butnotequal5.hackini24.shellmates.club 443
+deployment:
+  autoban: false
+  conn_type: nc
+  containerPort: 1337
+  deployed: true
+  isolate: false
+  name: equal5butnotequal5
+  nodePort: 30411
+  type: tcp
+description: "> == or !=, are u sure?\n   \n\n **Author**: yh_0x7"
+difficulty: easy
+extra:
+  decay: 50
+  initial: 500
+  minimum: 50
+files:
+- challenge/script.py
+flags:
+- shellmates{eKwaL5_8U7_N07_eKWAl5_W17h_Nan}
+name: eQual5bUtNoTeQual5
+state: hidden
+tags:
+- python
+type: dynamic
+value: 500
+version: '0.1'
+wave: 1
