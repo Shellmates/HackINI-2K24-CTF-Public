@@ -2,8 +2,10 @@
 
 ## Write-up
 
-- Given the Ansible playbook, we can conclude that it archives a folder, encrypt it using `my_secret.txt` and push it to a github repository.
+- Given the Ansible playbook, we can conclude that it archives a folder, encrypt it using `my_secret.txt` which is the vault password and finally push it to a github repository.
   
+>Ansible is an automation tool that is widely used for tasks such as application deployment, updates on workstations and servers ... etc.
+
 - Let's clone the mentioned [repository](https://github.com/4NG3L-4/Backeup.git). We can find the Ansible vault and a deleted `my_secret.txt`
 
 - Looking into the commits, we can extract the vault password using:
@@ -33,11 +35,19 @@ print(vault_pass[1:])
 ansible-vault decrypt --ask-for-password Backup.tar.gz
 ```
 
-- We extract it, and we are looking into some interesting macOS directories and file like *.Trash*, *Keychains*, *.DS_Store*. FYI, DS_Store files are invisible files on the macOS operating system that stores custom attributes and metadata of its containing folders, such as folder view options, icon positions, and other visual information. Keychain is a secure storage system that stores sensitive information such as passwords, certificates, and keys.
+- We extract it, the folder `Library/FamilyPics` contains an interesting JPEG that has `johnwatson is my login password` as a comment in its EXIF data. Let's keep a note of.
 
-- Nothing can be found in ordinary files, let's parse *.DS_Store* files using [DSStoreParser](https://github.com/nicoleibrahim/DSStoreParser). We check the `DS_Store-Miscellaneous_Info_Report-*-*.tsv`. We extract the `record_filename` column. We extract all the filenames, decode from base64 and we get the first part of the flag.
+- Then, We are looking into some interesting macOS directories and files like *.Trash*, *Keychains*, *.DS_Store*.
+ 
+>DS_Store files are invisible files on the macOS operating system that stores custom attributes and metadata of its containing folders, such as folder view options, icon positions, and other visual information. 
 
-- Moving to the Keychain, The keychain password is as same as the user login password which is in this case `johnwatson`. We can dump it using [chainbreaker](https://github.com/n0fate/chainbreaker) or [keychain-dumper](https://github.com/ptoomey3/Keychain-Dumper). We find the secure note `flag part 02` in `System.keychain`.
+>Keychain is a secure storage system that stores sensitive information such as passwords, certificates, and keys. Generally, the user login password unlocks the keychain. 
+
+>The interesting fact about macOS trash is that it has also a .DS_Store file, which, even after you empty the trash the files attributes remain stored in that file.
+
+- Let's parse *.DS_Store* files using [DSStoreParser](https://github.com/nicoleibrahim/DSStoreParser). We check the `DS_Store-Miscellaneous_Info_Report-*-*.tsv`. We extract the `record_filename` column. We extract all the filenames, decode from base64 and we get the first part of the flag.
+
+- Moving to the Keychains, The keychains password is as same as the user login password which is in this case `johnwatson`. We can dump it using [chainbreaker](https://github.com/n0fate/chainbreaker). We find the secure note `flag part 02` in `login.keychain-db`.
 
 ## Flag
 
